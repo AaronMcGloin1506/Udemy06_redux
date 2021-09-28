@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Header from './components/header';
-import Home from './components/home';
+import Header from './components/Header';
+import Home from './components/Home';
 
 const App = () => {
   return (
