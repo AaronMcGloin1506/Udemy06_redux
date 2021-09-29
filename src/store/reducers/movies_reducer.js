@@ -1,13 +1,13 @@
-const MovieList = {
-    name:"MovieName",
+const DEFAULT_STORE = {
+    name:"Francis",
     id:1234
 }
 
 
-export default function(state=MovieList,action){
+export default function(state=DEFAULT_STORE,action){
     switch(action.type){
         case 'MOVIES_LIST':
-            return action.payload
+            return {...state, moviesList:action.payload}
         default:
             return state
     }
