@@ -1,4 +1,4 @@
-import { MOVIES_LIST, MOVIE_DATA } from '../types';
+import { MOVIES_LIST, MOVIE_DATA, GET_USERS } from '../types';
 
 const DEFAULT_STORE = {
     name:"Francis",
@@ -12,6 +12,8 @@ export default function(state=DEFAULT_STORE,action){
             return {...state, moviesList:action.payload}
         case MOVIE_DATA:
             return {...state,movieData:action.payload}
+        case GET_USERS:
+            return {...state, users:action.payload}
         default:
             return state
     }
